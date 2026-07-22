@@ -23,6 +23,7 @@ export default defineConfig(
             'no-console': 'warn',
             'no-unused-vars': 'error',
             eqeqeq: 'warn',
+            'dot-notation': 'error',
         },
     },
 );
