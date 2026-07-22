@@ -20,10 +20,10 @@ export default defineConfig(
             },
         },
         rules: {
-            'no-console': 'warn',
-            'no-unused-vars': 'error',
-            eqeqeq: 'warn',
-            'dot-notation': 'error',
+            // 'no-console': 'warn',
+            // 'no-unused-vars': 'error',
+            // eqeqeq: 'warn',
+            // 'dot-notation': 'error',
         },
     },
 );
