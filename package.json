@@ -1,44 +1,47 @@
 {
-  "name": "expressts",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/hemant-kushwaha/typeSafe-Express-#readme",
-  "bugs": {
-    "url": "https://github.com/hemant-kushwaha/typeSafe-Express-/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hemant-kushwaha/typeSafe-Express-.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "module",
-  "main": "server.js",
-  "scripts": {
-    "dev": "nodemon dist/server.js",
-    "format:fix": "prettier . --write",
-    "format:check": "prettier . --check",
-    "lint:check": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.39.5",
-    "@types/node": "^26.1.1",
-    "eslint": "^9.39.5",
-    "lint-staged": "^16.4.0",
-    "prettier": "3.9.6",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.65.0"
-  },
-  "lint-staged": {
-    "*.ts": [
-      "npm run format:fix",
-      "npm run lint:fix"
-    ]
-  },
-  "dependencies": {
-    "dotenv": "^17.4.2"
-  }
+    "name": "expressts",
+    "version": "1.0.0",
+    "description": "",
+    "homepage": "https://github.com/hemant-kushwaha/typeSafe-Express-#readme",
+    "bugs": {
+        "url": "https://github.com/hemant-kushwaha/typeSafe-Express-/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hemant-kushwaha/typeSafe-Express-.git"
+    },
+    "license": "ISC",
+    "author": "",
+    "type": "module",
+    "main": "server.js",
+    "scripts": {
+        "dev": "tsx watch src/server.ts",
+        "format:fix": "prettier . --write",
+        "format:check": "prettier . --check",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.39.5",
+        "@types/express": "^5.0.6",
+        "@types/node": "^26.1.1",
+        "eslint": "^9.39.5",
+        "lint-staged": "^16.4.0",
+        "prettier": "3.9.6",
+        "tsx": "^4.23.1",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.65.0"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "npm run format:fix",
+            "npm run lint:fix"
+        ]
+    },
+    "dependencies": {
+        "dotenv": "^17.4.2",
+        "express": "^5.2.1"
+    }
 }
